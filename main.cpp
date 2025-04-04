@@ -93,7 +93,7 @@ void testPowerOfTwo() {
     }
 }
 
-//when using this code the & symbol makes sure that we are passing by reference to change the values later on
+// when using this code the & symbol makes sure that we are passing by reference to change the values later on
 void reduce(int& numerator, int& denominator) {
     int divisor = gcd(numerator, denominator);
     numerator /= divisor;
@@ -164,9 +164,14 @@ void testIsPrime() {
 
 int main() {
     // tests power of two with a loop and without check the test to configure for which
-    // testPowerOfTwo();
+    testPowerOfTwo();
 
-    // testReduceFraction();
+    // tests reduce Fraction and its related methods
+    testReduceFraction();
+
+    // tests the IsPrime method to make sure correctly checking for prime numbers
     testIsPrime();
+
+    return 0;
 }
 
